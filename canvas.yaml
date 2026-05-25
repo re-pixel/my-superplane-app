@@ -2,20 +2,6 @@ apiVersion: v1
 kind: Canvas
 metadata:
   name: Console Demo
-  description: Tiny canvas used to demo console.yaml loading on install
-  isTemplate: false
 spec:
-  nodes:
-    - id: manual-start
-      name: manual_start
-      type: TYPE_TRIGGER
-      component: start
-      configuration:
-        templates:
-          - name: Default
-            payload:
-              note: "Hello from canvas.yaml"
-      position:
-        x: 120
-        y: 200
+  nodes: []
   edges: []
