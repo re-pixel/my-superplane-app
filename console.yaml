@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Console
+metadata:
+  name: Preview Env Console
+spec:
+  panels:
+    - id: intro
+      type: markdown
+      content:
+        title: Welcome
+        body: |
+          # Loaded from console.yaml
+
+          If you can read this after installing the app from GitHub, the
+          new install flow is wiring the console end-to-end.
+
+    - id: notes
+      type: markdown
+      content:
+        title: How this works
+        body: |
+          - `canvas.yaml` defines the workflow.
+          - `console.yaml` (this file) defines the console.
+          - Both are read from the same git ref on install.
+
+  layout:
+    - i: intro
+      x: 0
+      y: 0
+      w: 12
+      h: 3
+    - i: notes
+      x: 0
+      y: 3
+      w: 6
+      h: 4
